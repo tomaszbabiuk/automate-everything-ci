@@ -1,0 +1,22 @@
+defaultTasks 'run'
+
+tasks.register('run') {
+    dependsOn gradle.includedBuild('automate-everything').task(':ae-backend:assembleBackend')
+
+    dependsOn gradle.includedBuild('aeplugin-afore').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-alarm').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-bashaction').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-centralheating').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-cryptotrading').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-diydistancesensor').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-emailaction').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-homeautomationicons').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-mobileaccess').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-onewire').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-onoff').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-scenes').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-sensorsandcontrollers').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-shelly').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-time').task(':buildForAutomateEverything')
+    dependsOn gradle.includedBuild('aeplugin-zigbee2mqtt').task(':buildForAutomateEverything')
+}
