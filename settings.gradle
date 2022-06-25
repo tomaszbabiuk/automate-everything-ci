@@ -1,11 +1,10 @@
-rootProject.name = 'ci'
+rootProject.name = 'automate-everything-ci'
 
 includeBuild "../aeplugin-afore"
 includeBuild "../aeplugin-alarm"
 includeBuild "../aeplugin-bashaction"
 includeBuild "../aeplugin-centralheating"
 includeBuild "../aeplugin-cryptotrading"
-includeBuild "../aeplugin-diydistancesensor"
 includeBuild "../aeplugin-emailaction"
 includeBuild "../aeplugin-homeautomationicons"
 includeBuild "../aeplugin-mobileaccess"
