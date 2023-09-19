@@ -1,5 +1,6 @@
 rootProject.name = 'automate-everything-ci'
 
+includeBuild "../automate-everything"
 includeBuild "../aeplugin-afore"
 includeBuild "../aeplugin-alarm"
 includeBuild "../aeplugin-bashaction"
@@ -16,4 +17,3 @@ includeBuild "../aeplugin-time"
 includeBuild "../aeplugin-zigbee2mqtt"
 includeBuild "../aeplugin-blinky"
 includeBuild "../aeplugin-tablets"
-includeBuild "../automate-everything"
